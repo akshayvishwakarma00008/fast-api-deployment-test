@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual Environment
+venv/
+fastapienv/
+
+# VSCode config
+.vscode/
+
+# Environment Variables
+.env
+.env.*
+
+# Python egg metadata
+*.egg-info/
+dist/
+build/
+
+# PyInstaller
+*.spec
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# Pylint
+.pylint.d/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.pytest_cache/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Database
+*.sqlite3
+*.db
+
+# Uvicorn logs
+*.pid
+
+# Swagger generated files (if saved)
+openapi.json
+docs.json
+
+# Jupyter Notebooks (if used)
+.ipynb_checkpoints/
+
+# __init__.py artifacts
+*.pyc
+
+# Idea config
+.idea/
