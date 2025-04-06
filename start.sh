@@ -1,8 +1,7 @@
 
-#!/bin/bash
-
 # Run Alembic migrations
 echo "Running database migrations..."
+cd TodoApp
 alembic upgrade head
 
 # Start the FastAPI app with Uvicorn
