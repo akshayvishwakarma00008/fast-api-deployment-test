@@ -2,7 +2,6 @@
 # Run Alembic migrations
 echo "Running database migrations..."
 cd TodoApp
-alembic revision --autogenerate -m "auto migration $(date +%s)"
 alembic upgrade head
 
 # Start the FastAPI app with Uvicorn
