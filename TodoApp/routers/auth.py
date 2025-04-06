@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, status, HTTPException
 from pydantic import BaseModel
-from models import Users
+from TodoApp.models import Users
 from passlib.context import CryptContext # for passsword hashing
 from sqlalchemy.orm import Session
-from database import SessionLocal
+from TodoApp.database import SessionLocal
 from typing_extensions import Annotated
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from jose import jwt, JWTError

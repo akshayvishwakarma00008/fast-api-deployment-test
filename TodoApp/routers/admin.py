@@ -1,8 +1,8 @@
 from typing_extensions import Annotated
 from sqlalchemy.orm import Session
 from fastapi import APIRouter, Depends, status, HTTPException, Path
-from models import Todos
-from database import  SessionLocal
+from TodoApp.models import Todos
+from TodoApp.database import  SessionLocal
 from pydantic import Field, BaseModel
 from .auth import get_current_user
 
