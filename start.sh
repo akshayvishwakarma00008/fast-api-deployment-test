@@ -1,10 +1,9 @@
 
-# Run Alembic migrations
+# Make sure Python can find your app
+export PYTHONPATH=/opt/render/project/src
+
 echo "Running database migrations..."
-cd TodoApp
 alembic upgrade head
 
-# Start the FastAPI app with Uvicorn
 echo "Starting FastAPI app..."
-cd ..
 uvicorn TodoApp.main:app --host=0.0.0.0 --port=10000 --reload
