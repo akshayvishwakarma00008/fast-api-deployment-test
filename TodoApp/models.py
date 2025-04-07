@@ -24,3 +24,10 @@ class Todos(Base):
     completed = Column(Boolean, default=False)
     owner_id = Column(Integer, ForeignKey("users.id"))
     
+class Test(Base):
+    __tablename__ = 'test'
+    
+    id =  Column(Integer, primary_key=True, index=True)
+    name  = Column(String)
+    description = Column(String)
+    
